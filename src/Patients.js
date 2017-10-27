@@ -10,7 +10,7 @@ class Patients extends Component {
         <p>Gender: {details.gender}</p>
         <p>Number of conditions they have: {details.conditions.length}</p>
         <ul>
-          {details.conditions.map( (condition) => <li>{condition}</li>)}
+          {details.conditions.map( (condition, i) => <li key={i}>{condition}</li>)}
         </ul>
       </div>
     )
