@@ -4,7 +4,7 @@ class Patients extends Component {
   render(){
     const { details } = this.props
     return(
-      <div>
+      <div className="patientData">
         <p>Name of patient: {details.name.given} {details.name.family}</p>
         <p>Organization name: {details.managingOrganization.display}</p>
         <p>Gender: {details.gender}</p>
